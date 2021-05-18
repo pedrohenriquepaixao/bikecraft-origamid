@@ -120,3 +120,87 @@ p{
         color: #FFF;
     }
 }
+
+.is-black{
+
+    &:hover{
+        border-color:black;
+        color: black;
+    }
+}
+
+
+.produtos{
+    margin: 40px 0;
+    &__subtitulo{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &::after{
+            display: block;
+            content: "";
+            border-bottom: 3px solid black;
+            width: 50px;
+            margin: 5px auto;
+        }
+    }
+
+    .list-produtos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 40px 0;
+        &__items{
+            background-color: var(--amarelo);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        &__img{
+            background-color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        &__titulo{
+            color:#000;
+            margin-top: 20px;
+            letter-spacing: .1em;
+            font-size: 1.125rem;
+            &::after{
+                display: block;
+                content: "";
+                border-bottom: 3px solid black;
+                width: 50px;
+                margin: 5px auto;
+            }
+        }
+
+        &__paragrafo{
+            color: #000;
+            text-align: center;
+            padding: 10px 20px 20px 10px;
+            font-size: 0.875rem;
+        }
+    }
+
+    .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__paragrafo{
+            margin-bottom: 10px;
+        }
+    }
+}
