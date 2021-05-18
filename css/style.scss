@@ -1,0 +1,122 @@
+:root{
+    --amarelo: #fec63e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.875rem;
+}
+
+.header{
+    background-color: var(--amarelo);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+
+    &__menu{
+        list-style: none;
+        display: flex;
+    }
+
+    &__item{
+        margin-left: 1rem;
+    }
+
+    &__link{
+        padding: 5px;
+        color: #000;
+        font-size: .875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        transition: 0.3s;
+        &:hover{
+            color: #FFF;
+            border-bottom: 5px solid black;
+        }
+    }
+}
+
+.destaque{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 380px;
+    margin-top: 98px;
+    display: flex;
+    align-items: center;
+
+    .container{
+        flex-direction: column;
+    }
+
+    &__titulo{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    &__quote-externo{
+        text-transform: lowercase;
+        text-align: center;
+        color: white;
+        max-width: 20rem;
+
+        &::before, &::after{
+            display: block;
+            content: "";
+            width: 80px;
+            margin: 10px auto;
+            border-top: 3px solid white;
+        }
+    }
+
+    &__paragrafo{
+        font-style: italic;
+    }
+    
+    &__autor{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 0.875rem;
+        letter-spacing: .1em;
+    }
+}
+
+.c-btn{
+    border: 3px solid var(--amarelo);
+    padding: 8px 15px;
+    text-decoration: none;
+    color: var(--amarelo);
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover{
+        border-color: #FFF;
+        color: #FFF;
+    }
+}

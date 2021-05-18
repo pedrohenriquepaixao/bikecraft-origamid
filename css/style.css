@@ -1,0 +1,143 @@
+:root {
+  --amarelo: #fec63e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.875rem;
+}
+
+.header {
+  background-color: var(--amarelo);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.header__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin-left: 1rem;
+}
+
+.header__link {
+  padding: 5px;
+  color: #000;
+  font-size: .875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: #FFF;
+  border-bottom: 5px solid black;
+}
+
+.destaque {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 380px;
+  margin-top: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destaque .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.destaque__titulo {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.destaque__quote-externo {
+  text-transform: lowercase;
+  text-align: center;
+  color: white;
+  max-width: 20rem;
+}
+
+.destaque__quote-externo::before, .destaque__quote-externo::after {
+  display: block;
+  content: "";
+  width: 80px;
+  margin: 10px auto;
+  border-top: 3px solid white;
+}
+
+.destaque__paragrafo {
+  font-style: italic;
+}
+
+.destaque__autor {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.875rem;
+  letter-spacing: .1em;
+}
+
+.c-btn {
+  border: 3px solid var(--amarelo);
+  padding: 8px 15px;
+  text-decoration: none;
+  color: var(--amarelo);
+  font-size: 0.875rem;
+  letter-spacing: .1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.c-btn:hover {
+  border-color: #FFF;
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */
