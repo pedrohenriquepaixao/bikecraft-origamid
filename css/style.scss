@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img{
+    display: block;
+}
+
 .container{
     width: 100%;
     max-width: 960px;
@@ -28,6 +32,7 @@ p{
     top: 0;
     width: 100%;
     padding: 1rem 0;
+    z-index: 10;
 
     &__menu{
         list-style: none;
@@ -60,7 +65,7 @@ p{
     background-position: center center;
     width: 100%;
     height: 380px;
-    margin-top: 98px;
+    margin-top: 94px;
     display: flex;
     align-items: center;
 
@@ -130,7 +135,7 @@ p{
 }
 
 .produtos{
-    margin: 40px 0;
+    padding: 60px 0;
     &__subtitulo{
         text-align: center;
         text-transform: uppercase;
@@ -207,7 +212,7 @@ p{
 .portifolio{
     background-color: black;
     text-align: center;
-    padding: 10px 0;
+    padding: 60px 0;
     &__subtitulo{
         color: white;
         text-align: center;
@@ -248,4 +253,81 @@ p{
         }
     }
 
+}
+
+.qualidade{
+    padding: 60px 0;
+    position: relative;
+    &::after{
+        content: "";
+        background-image: url("../img/linhas.svg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 11.5rem;
+        left: 22.42rem;
+        right:0;
+        bottom:0;
+        width: 634px;
+        height: 83px;
+    }
+
+    &__subtitulo{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        &::after{
+            display: block;
+            content: "";
+            border-bottom: 3px solid black;
+            width: 50px;
+            margin: 5px auto;
+        }
+    }
+    
+
+    .container{
+        flex-direction: column;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-top: 50px;
+    }
+
+    &__items{
+        text-align: center;
+        padding: 0 40px;
+        margin:0 10px;
+    }
+
+    &__titulo{
+        color:#000;
+        margin-top: 20px;
+        letter-spacing: .1em;
+        font-size: 1.125rem;
+        &::after{
+            display: block;
+            content: "";
+            border-bottom: 3px solid black;
+            width: 50px;
+            margin: 8px auto;
+        }
+    }
+
+    .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__paragrafo{
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
 }
