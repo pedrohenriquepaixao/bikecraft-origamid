@@ -129,7 +129,6 @@ p{
     }
 }
 
-
 .produtos{
     margin: 40px 0;
     &__subtitulo{
@@ -203,4 +202,50 @@ p{
             margin-bottom: 10px;
         }
     }
+}
+
+.portifolio{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    &__subtitulo{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0px;
+
+        &::after{
+            display: block;
+            content: "";
+            border-bottom: 3px solid white;
+            width: 50px;
+            margin: 5px auto;
+        }
+    }
+
+    &__list-img{
+        margin: 20px 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__items{
+        margin-bottom: 15px;
+    }
+
+    .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__paragrafo{
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+
 }

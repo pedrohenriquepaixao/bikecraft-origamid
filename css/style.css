@@ -253,4 +253,63 @@ p {
 .produtos .call__paragrafo {
   margin-bottom: 10px;
 }
+
+.portifolio {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.portifolio__subtitulo {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.portifolio__subtitulo::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid white;
+  width: 50px;
+  margin: 5px auto;
+}
+
+.portifolio__list-img {
+  margin: 20px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portifolio__items {
+  margin-bottom: 15px;
+}
+
+.portifolio .call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portifolio .call__paragrafo {
+  color: white;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
