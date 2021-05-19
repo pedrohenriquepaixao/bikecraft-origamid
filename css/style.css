@@ -100,14 +100,14 @@ p {
   font-size: 3rem;
 }
 
-.destaque__quote-externo {
+.c-quote-externo {
   text-transform: lowercase;
   text-align: center;
   color: white;
   max-width: 20rem;
 }
 
-.destaque__quote-externo::before, .destaque__quote-externo::after {
+.c-quote-externo::before, .c-quote-externo::after {
   display: block;
   content: "";
   width: 80px;
@@ -115,11 +115,11 @@ p {
   border-top: 3px solid white;
 }
 
-.destaque__paragrafo {
+.c-quote-externo__paragrafo {
   font-style: italic;
 }
 
-.destaque__autor {
+.c-quote-externo__autor {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -408,5 +408,21 @@ p {
 .qualidade .call__paragrafo {
   color: white;
   margin-bottom: 20px;
+}
+
+.quebra {
+  background-image: url("../img/bg-footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
