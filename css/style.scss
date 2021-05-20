@@ -57,6 +57,11 @@ p{
             border-bottom: 5px solid black;
         }
     }
+
+    .is-active{
+        color: #FFF;
+        border-bottom: 5px solid black;
+    }
 }
 
 .destaque{
@@ -81,6 +86,37 @@ p{
     }
 
     
+}
+
+.destaque-interna{
+    width: 100%;
+    height: 160px;
+    margin-top: 94px;
+    display: flex;
+    color: #FFF;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__titulo{
+        font-size: 2rem;
+        font-weight: bold;
+
+        &::after{
+            display: block;
+            content: "";
+            width: 80px;
+            margin: 10px auto;
+            border-top: 3px solid white;
+        }
+
+    }
 }
 
 .c-quote-externo{
@@ -110,8 +146,6 @@ p{
         letter-spacing: .1em;
     }
 }
-
-
 
 .c-btn{
     border: 3px solid var(--amarelo);
@@ -359,6 +393,10 @@ p{
     &__mapa{
         padding: 30px 0 ;
     }
+    
+    &__card{
+        padding-right: 45px;
+    }
 
     &__card:not(:first-child){
         margin-left: 30px;
@@ -383,7 +421,8 @@ p{
     }
 
     &__list{
-        list-style: "- ";
+        list-style: "-";
+        padding: 0px 5px;
     }
 
     &__social-midia{
@@ -407,3 +446,5 @@ p{
         }
     }
 }
+
+@import 'sobre';

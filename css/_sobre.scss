@@ -1,0 +1,58 @@
+.sobre{
+    background-image: url('../img/bg-sobre.jpg');   
+}
+
+.missao-valores{
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .container{
+        align-items: flex-start;
+    }
+
+    &__missao{
+        width: 60%;
+    }
+    &__titulo{
+
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        &::after{
+            content: "";
+            display: block;
+            width: 50px;
+            margin: 6px 0 ;
+            border-bottom: 3px solid #000;
+        }
+    }
+
+    &__paragrafo{
+     font-size: 1.1rem;
+     padding: 15px 0;   
+    }
+
+    &__list{
+        list-style: "-";
+        list-style-position: inside;
+    }
+
+    &__items{
+        padding: 5px 0;
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 960px;
+        margin-top: 50px;
+        background-color: red;
+
+
+        img{
+            width: 100%;
+        }
+    }
+}
