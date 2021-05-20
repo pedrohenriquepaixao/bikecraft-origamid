@@ -818,4 +818,30 @@ p {
 .orcamento__info ul li:nth-child(odd) {
   background-color: #201f1f;
 }
+
+.portfolio-bg {
+  background-image: url("../img/bg-portfolio.jpg");
+  background-size: cover;
+}
+
+.portfolio .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .container .c-quote-externo__paragrafo {
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.portfolio .container .c-quote-externo__autor {
+  color: #000;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.portfolio-bg{
+    background-image: url('../img/bg-portfolio.jpg');
+    background-size: cover;
+}
+
+.portfolio{
+    
+    .container{
+        justify-content: center;
+
+        .c-quote-externo{
+            
+            
+            &__paragrafo{
+                color: #000;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+
+            &__autor{
+                color: #000;
+                display: block;
+                text-align: right;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+        }
+    }
+}
