@@ -157,6 +157,7 @@ p{
     font-weight: bold;
     text-transform: uppercase;
     transition: .3s;
+    cursor: pointer;
 
     &:hover{
         border-color: #FFF;
@@ -447,4 +448,4 @@ p{
     }
 }
 
-@import 'sobre';
+@import 'sobre','produtos';

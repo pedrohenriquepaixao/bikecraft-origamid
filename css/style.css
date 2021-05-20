@@ -183,6 +183,7 @@ p {
   text-transform: uppercase;
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: pointer;
 }
 
 .c-btn:hover {
@@ -608,5 +609,213 @@ p {
 
 .missao-valores__img img {
   width: 100%;
+}
+
+.produtos-bg {
+  background-image: url("../img/bg-produtos.jpg");
+  background-size: cover;
+}
+
+.produtos-item {
+  padding-top: 60px;
+}
+
+.produtos-item .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.produtos-item__titulo {
+  font-size: 2.25rem;
+  letter-spacing: .1em;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  right: 220px;
+  bottom: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.produtos-item__titulo::before {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  border-top: 3px solid white;
+}
+
+.produtos-item__titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 5px auto;
+  border-bottom: 3px solid white;
+}
+
+.produtos-item__icone {
+  background-color: black;
+  width: 100%;
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+}
+
+.produtos-item__card {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.produtos-item__paragrafo {
+  color: #FFF;
+  font-size: 1.125rem;
+  line-height: 25px;
+  padding: 47px 40px;
+}
+
+.produtos-item__info {
+  background-color: black;
+}
+
+.produtos-item__list {
+  list-style: none;
+  background-color: var(--amarelo);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.produtos-item__items {
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.orcamento {
+  background-color: black;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.orcamento__subtitulo {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding-bottom: 40px;
+}
+
+.orcamento__subtitulo::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid white;
+  width: 50px;
+  margin: 5px auto;
+}
+
+.orcamento .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 20px;
+}
+
+.orcamento__form {
+  color: #FFF;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.orcamento__form label {
+  color: #FFF;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.orcamento__form input {
+  background: none;
+  color: #FFF;
+  outline: none;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border: 3px solid var(--amarelo);
+}
+
+.orcamento__form textarea {
+  background: none;
+  color: #FFF;
+  outline: none;
+  padding: 2px 5px;
+  border: 3px solid var(--amarelo);
+}
+
+.orcamento__form .c-btn {
+  width: inherit;
+  margin-top: 20px;
+}
+
+.orcamento__info {
+  width: 50%;
+  margin-left: 50px;
+  color: #FFF;
+  text-align: left;
+  font-weight: bold;
+}
+
+.orcamento__info__card {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.orcamento__info span {
+  padding: 10px 0px;
+}
+
+.orcamento__info h3 {
+  color: var(--amarelo);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.orcamento__info ul {
+  list-style: "- ";
+  list-style-position: inside;
+}
+
+.orcamento__info ul li {
+  padding: 10px 10px;
+}
+
+.orcamento__info ul li:nth-child(odd) {
+  background-color: #201f1f;
 }
 /*# sourceMappingURL=style.css.map */
