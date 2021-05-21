@@ -844,4 +844,128 @@ p {
   font-weight: bold;
   margin-top: 20px;
 }
+
+.contato-bg {
+  background-image: url("../img/bg-contato.jpg");
+  background-size: cover;
+}
+
+.contato {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.contato__subtitulo {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding-bottom: 40px;
+}
+
+.contato__subtitulo::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid white;
+  width: 50px;
+  margin: 5px auto;
+}
+
+.contato .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contato__form {
+  color: #000;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contato__form label {
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.contato__form input {
+  background: none;
+  color: #000;
+  outline: none;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border: 3px solid var(--amarelo);
+}
+
+.contato__form textarea {
+  background: none;
+  color: #000;
+  outline: none;
+  padding: 2px 5px;
+  border: 3px solid var(--amarelo);
+}
+
+.contato__form .c-btn {
+  width: inherit;
+  margin-top: 20px;
+}
+
+.contato__info {
+  width: 50%;
+  margin-left: 50px;
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contato__info__card {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contato__info span {
+  padding: 10px 0px;
+}
+
+.contato__info h3 {
+  color: var(--amarelo);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.contato__info ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contato__info ul li:first-child {
+  margin-left: 0;
+}
+
+.contato__info ul li {
+  border: 3px solid var(--amarelo);
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.mapa {
+  margin-bottom: 60px;
+}
 /*# sourceMappingURL=style.css.map */

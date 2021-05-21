@@ -1,0 +1,107 @@
+.contato-bg{
+    background-image: url('../img/bg-contato.jpg');
+    background-size: cover;
+}
+
+
+.contato{
+    text-align: center;
+    padding: 60px 0;
+    &__subtitulo{
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0px;
+        padding-bottom: 40px;
+        &::after{
+            display: block;
+            content: "";
+            border-bottom: 3px solid white;
+            width: 50px;
+            margin: 5px auto;
+        }
+    }
+
+    .container{
+        align-items: flex-start;
+    }
+
+    &__form{
+        color: #000;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        label{
+            color: #000;
+            text-align: left;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        input{
+            background: none;
+            color: #000;
+            outline: none;
+            padding: 10px 5px;
+            margin-bottom: 20px;
+            border: 3px solid var(--amarelo);
+        }
+
+        textarea{
+            background:none;
+            color: #000;
+            outline: none;
+            padding: 2px 5px;
+            border: 3px solid var(--amarelo);
+        }
+
+        .c-btn{
+            width: inherit;
+            margin-top: 20px;
+        }
+    }
+
+    &__info{
+        width: 50%;
+        margin-left: 50px;
+        color: #000;
+        text-align: left;
+        font-weight: bold;
+        
+        &__card{
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        span{
+            padding: 10px 0px;
+        }
+
+        h3{
+            color: var(--amarelo);
+            text-transform: uppercase;
+            padding-bottom: 5px;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            li:first-child{
+                margin-left: 0;
+            }
+            li{
+                border: 3px solid var(--amarelo);
+                margin-left: 10px;
+                padding: 5px;
+            }
+
+            
+        }
+    }
+}
+
+.mapa{
+    margin-bottom: 60px;
+}
